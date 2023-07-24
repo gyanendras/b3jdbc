@@ -33,4 +33,14 @@ class JDBCTestTest {
 
 	}
 
+	
+	@Test
+	void testProcessSqlStmt(){
+		JDBCTest jb = new JDBCTest();
+		Connection con = null;
+		
+		con = jb.connecToDb();
+
+		jb.processSqlStmt(con);
+	}
 }
