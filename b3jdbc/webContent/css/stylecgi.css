@@ -1,11 +1,39 @@
 @charset "UTF-8";
 #nav1{
 	 margin: 2px;
-	 border: 20px;
-	 border-color:red;
+	 border: 2px solid;
+	 border-color:red ;
 	 padding: 2px;
 	 background-color: goldenrod;
 	 color:royalblue ;
 	 text-align: center ;
 	 font-size: 40px;
+}
+
+img{
+	border: 2px groove;
+	 border-color:red;
+}
+
+#ins1{
+	 margin: 2px;
+	 border: 2px solid;
+	 border-color:red ;
+	 padding: 2px;
+	 background-color: goldenrod;
+	 color:royalblue ;
+	 
+}
+
+#ser1{
+	 margin: 2px;
+	 border: 2px solid;
+	 border-color:red ;
+	 padding: 2px;
+	 background-color: goldenrod;
+	 color:royalblue ;
+	 text-align: left ;
+	 
+	
+	
 }
