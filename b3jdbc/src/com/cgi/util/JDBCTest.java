@@ -29,7 +29,7 @@ public class JDBCTest {
 	 public void processSqlStmt(Connection conn){
 		 try {
 			Statement stmt = conn.createStatement();
-			ResultSet rs = stmt.executeQuery("Select * from Employees");
+			ResultSet rs = stmt.executeQuery("Select * from Employees"); //also create and insert.
 			int empId = 0;
 			String firstName=null;
 			Double sal = null;
