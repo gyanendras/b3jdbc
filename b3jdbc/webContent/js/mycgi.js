@@ -31,21 +31,22 @@ function validate(){
 	return submit;
 }
 
-y="inital val";
+y1="Blank";
 
 function echo(){
-	y= "Echo msg";
-	console.log(y);
+	y1= "Echo msg";
+	console.log(y1);
 }
 
-function printMsg(y){
-	console.log(y);
+function printMsg(yparam){
+	console.log(yparam);
 	
 }
 
 function callerFunction(x){
 	setTimeout(echo,3000);
-	x(y);
+	x(y1);
+	return y1;
 }
 
 
@@ -68,10 +69,22 @@ pmf = function(sh,eh){
 	
 }
 
+
 pm = new Promise(pmf);
 pm.then(
 	function(){console.log("Successff");},
 	function(){console.log("ErrorSf");}
 	
 );
+
+pm2 = new Promise(callerFunction);
+
+
 pm.then(successHand,errorHand);
+
+async function checkPromiseAwait(){
+	let y2 = await pm2;
+	console.log("pm2 " +y2);
+	}
+	
+checkPromiseAwait();	
